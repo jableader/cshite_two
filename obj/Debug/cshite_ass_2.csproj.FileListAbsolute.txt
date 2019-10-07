@@ -1,0 +1,13 @@
+E:\Code\uni\cshite_ass_2\cshite_ass_2\bin\Debug\login.txt
+E:\Code\uni\cshite_ass_2\cshite_ass_2\bin\Debug\cshite_ass_2.exe.config
+E:\Code\uni\cshite_ass_2\cshite_ass_2\bin\Debug\cshite_ass_2.exe
+E:\Code\uni\cshite_ass_2\cshite_ass_2\bin\Debug\cshite_ass_2.pdb
+E:\Code\uni\cshite_ass_2\cshite_ass_2\obj\Debug\cshite_ass_2.csprojAssemblyReference.cache
+E:\Code\uni\cshite_ass_2\cshite_ass_2\obj\Debug\cshite_ass_2.LoginForm.resources
+E:\Code\uni\cshite_ass_2\cshite_ass_2\obj\Debug\cshite_ass_2.NewUserForm.resources
+E:\Code\uni\cshite_ass_2\cshite_ass_2\obj\Debug\cshite_ass_2.Properties.Resources.resources
+E:\Code\uni\cshite_ass_2\cshite_ass_2\obj\Debug\cshite_ass_2.csproj.GenerateResource.cache
+E:\Code\uni\cshite_ass_2\cshite_ass_2\obj\Debug\cshite_ass_2.csproj.CoreCompileInputs.cache
+E:\Code\uni\cshite_ass_2\cshite_ass_2\obj\Debug\cshite_ass_2.exe
+E:\Code\uni\cshite_ass_2\cshite_ass_2\obj\Debug\cshite_ass_2.pdb
+E:\Code\uni\cshite_ass_2\cshite_ass_2\obj\Debug\cshite_ass_2.TextEditorForm.resources
