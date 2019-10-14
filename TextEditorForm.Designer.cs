@@ -206,7 +206,7 @@
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
             this.aboutToolStripMenuItem.Text = "&About...";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.AboutToolStripMenuItem_Click);
             // 
@@ -216,7 +216,7 @@
             // toolStripContainer1.ContentPanel
             // 
             this.toolStripContainer1.ContentPanel.Controls.Add(this.richTextBox);
-            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(768, 401);
+            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(776, 401);
             this.toolStripContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             // 
             // toolStripContainer1.LeftToolStripPanel
@@ -235,9 +235,10 @@
             // richTextBox
             // 
             this.richTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.richTextBox.HideSelection = false;
             this.richTextBox.Location = new System.Drawing.Point(0, 0);
             this.richTextBox.Name = "richTextBox";
-            this.richTextBox.Size = new System.Drawing.Size(768, 401);
+            this.richTextBox.Size = new System.Drawing.Size(776, 401);
             this.richTextBox.TabIndex = 0;
             this.richTextBox.Text = "";
             this.richTextBox.SelectionChanged += new System.EventHandler(this.RichTextBox_SelectionChanged);
@@ -251,7 +252,7 @@
             this.btnPaste});
             this.toolStrip2.Location = new System.Drawing.Point(0, 3);
             this.toolStrip2.Name = "toolStrip2";
-            this.toolStrip2.Size = new System.Drawing.Size(32, 99);
+            this.toolStrip2.Size = new System.Drawing.Size(24, 80);
             this.toolStrip2.TabIndex = 0;
             // 
             // btnCut
@@ -260,7 +261,7 @@
             this.btnCut.Image = ((System.Drawing.Image)(resources.GetObject("btnCut.Image")));
             this.btnCut.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnCut.Name = "btnCut";
-            this.btnCut.Size = new System.Drawing.Size(30, 20);
+            this.btnCut.Size = new System.Drawing.Size(22, 20);
             this.btnCut.Text = "C&ut";
             this.btnCut.Click += new System.EventHandler(this.CutToolStripButton1_Click);
             // 
@@ -270,7 +271,7 @@
             this.btnCopy.Image = ((System.Drawing.Image)(resources.GetObject("btnCopy.Image")));
             this.btnCopy.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnCopy.Name = "btnCopy";
-            this.btnCopy.Size = new System.Drawing.Size(30, 20);
+            this.btnCopy.Size = new System.Drawing.Size(22, 20);
             this.btnCopy.Text = "&Copy";
             this.btnCopy.Click += new System.EventHandler(this.CopyToolStripButton1_Click);
             // 
@@ -280,7 +281,7 @@
             this.btnPaste.Image = ((System.Drawing.Image)(resources.GetObject("btnPaste.Image")));
             this.btnPaste.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnPaste.Name = "btnPaste";
-            this.btnPaste.Size = new System.Drawing.Size(30, 20);
+            this.btnPaste.Size = new System.Drawing.Size(22, 20);
             this.btnPaste.Text = "&Paste";
             this.btnPaste.Click += new System.EventHandler(this.PasteToolStripButton1_Click);
             // 
