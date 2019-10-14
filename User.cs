@@ -19,12 +19,12 @@ namespace cshite_ass_2
         public DateTime Birthdate { get; private set; }
 
         public override string ToString()
-            => string.Join(",", new object[] { Username, Password, Type, FirstName, LastName, Birthdate.ToShortDateString() });
+            => string.Join(",", new object[] { Username, Password, Type, FirstName, LastName, Birthdate.ToShortDateString() }); // Represent this User as comma seperated values
 
         static User FromString(string line)
         {
-            var items = line.Split(',');
-            return new User
+            var items = line.Split(','); // The line contains the user's data as comma seperated values
+            return new User // We just need to pluck the values from the array
             {
                 Username = items[0],
                 Password = items[1],
@@ -35,17 +35,27 @@ namespace cshite_ass_2
             };
         }
 
+        /// <summary>
+        /// Creates and saves a new user
+        /// </summary>
         public static User Create(string username, string password, UserType type, string firstName, string lastName, DateTime birthdate)
         {
             var user = new User { Username = username, Password = password, Type = type, FirstName = firstName, LastName = lastName, Birthdate = birthdate };
-            File.AppendAllText(loginFile, "\r\n" + user.ToString());
+            File.AppendAllText(loginFile, "\r\n" + user.ToString()); // Saves this new user to the file
 
             return user;
         }
 
+        /// <summary>
+        /// Returns all users
+        /// </summary>
         public static IEnumerable<User> AllUsers
-            => File.ReadAllLines(loginFile).Where(s => !string.IsNullOrWhiteSpace(s)).Select(FromString);
+            => File.ReadAllLines(loginFile).Where(s => !string.IsNullOrWhiteSpace(s)).Select(FromString); // Convert each non-empty line into a user
 
+        /// <summary>
+        /// Retrieves the user with the assosciated username/password combo or null
+        /// </summary>
+        /// <returns></returns>
         public static User Authenticate(string username, string password)
             => AllUsers.FirstOrDefault(user => user.Username == username && user.Password == password);
     }
